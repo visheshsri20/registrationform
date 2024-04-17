@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <form action="submitform.php" method="post" >
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <label for="branch">Branch:</label><br>
+            <select id="branch" name="branch" required>
+                <option value="">Select Branch</option>
+                <option value="btech">B.Tech.</option>
+                <option value="bsc">B.Sc.</option>
+                <option value="be">B.E.</option>
+                <option value="bca">B.C.A.</option>
+            </select><br><br>
+        
+            <label for="specialization">Specialization:</label><br>
+            <select id="specialization" name="specialization" required>
+                <option value="">Select Specialization</option>
+                <option value="AI/ML">AI/ML</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="Core">Core</option>
+            </select><br><br>
+        
+            <label for="graduation_year">Graduation Year:</label><br>
+            <input type="date" id="graduation_year" name="graduation_year" min="2022-01-01" max="2030-12-31" required><br><br>
+        
+            <label for="preferred_location">Preferred Location to Work:</label><br>
+            <input type="text" id="preferred_location" name="preferred_location" required><br><br>
+        
+            <label for="key_skills">Key Skills:</label><br>
+            <input type="text" id="key_skills" name="key_skills" required><br><br>
+        
+            <label for="languages_known">Languages Known:</label><br>
+            <input type="text" id="languages_known" name="languages_known" required><br><br>
+        
+            <label for="projects">Projects:</label><br>
+            <textarea id="projects" name="projects" rows="4" cols="50" required></textarea><br><br>
+        
+            <label for="resume">Resume (PDF):</label><br>
+            <input type="file" id="resume" name="resume" accept=".pdf" required><br><br>
+        
+            <button type="submit">Submit</button>
+        </form>
+</div>
+</body>
+</html>
